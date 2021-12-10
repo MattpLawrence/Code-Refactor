@@ -26,4 +26,5 @@ I learned that there are a lot of nuances to code syntax, and that the longer I 
 
 ## Preview:
 The website landing page as written in this repository should look like the following image:
+
 ![Alt text](Assets/images/screenShotPreview.png)
