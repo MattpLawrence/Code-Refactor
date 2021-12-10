@@ -23,3 +23,7 @@ In this project I solved the problem of applying best practices to the format of
 
 ## What I learned:
 I learned that there are a lot of nuances to code syntax, and that the longer I looked the more I found out of place. When comparing the finished, refactored code to the starting code, it became clear how important these seemingly small changes are.
+
+## Preview:
+The website landing page as written in this repository should look like the following image:
+![Alt text](Assets/images/screenShotPreview.png)
