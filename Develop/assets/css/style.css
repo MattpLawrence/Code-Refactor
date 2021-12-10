@@ -1,30 +1,41 @@
+/* Organized, compressed, and heavily commented by Matthew Lawrence on 12-10-2021,
+for GT boot camp homework #1. */
+
+/* "*" means to apply to the whole page. This first block is to tell the page to get rid of the margin at the top so that the header is flush with the top of the page. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* setting the background color of the body section of the page */
 body {
     background-color: #d9dcd6;
 }
 
-.header {
+/* *********************************Start of Header section************************/
+
+/* setting the basic aesthetic of the header section */
+header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
     color: #ffffff;
 }
 
-.header h1 {
+/* setting the display style to show h1 elements next to each other.  */
+header h1 {
     display: inline-block;
     font-size: 48px;
 }
 
-.header h1 .seo {
+/* the "seo" section of the title has different font */
+header h1 .seo {
     color: #d9dcd6;
 }
 
-.header div {
+/* styling the nav bar */
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -32,24 +43,23 @@ body {
     font-size: 20px;
 }
 
-.header div ul {
+/* setting there to be no dot or style on the list items */
+header nav ul {
     list-style-type: none;
 }
 
-.header div ul li {
+/* styling the nav bar to show next to each other horizontally */
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/* styling the text for the link text */
 a {
     color: #ffffff;
     text-decoration: none;
 }
-
-p {
-    font-size: 16px;
-}
-
+/* background image for the top of the body */
 .hero {
     height: 800px;
     width: 100%;
@@ -59,23 +69,52 @@ p {
     background-position: center;
 }
 
+/* ********************************Start of style classes for the page************* */
+/* set this class to float content left */
 .float-left {
-    float: left;
-    margin-right: 25px;
+  float: left;
+  margin-right: 25px;
 }
-
+/* set this class to float content right */
 .float-right {
-    float: right;
-    margin-left: 25px;
+  float: right;
+  margin-left: 25px;
+}
+/* set all content in p tags to have 16px font */
+p {
+font-size: 16px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
+/* *************************************Start of main section******************* */
+/* set basic style of the main element */
+main {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+/* set style of each section element in the main element */
+main section{
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+/* set image size of images in main element */
+main img{
+  max-height: 200px;
+}
+/* set h2 style in the amin section */
+main h2{
+  margin-bottom: 20px;
+  font-size: 36px;
 }
 
-.benefits {
+/* **************************************Start of aside section******************* */
+/* set the stlye and location of the aside element,
+this will show on the right side of the main element */
+aside{
     margin-right: 20px;
     padding: 20px;
     clear: both;
@@ -85,116 +124,32 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
 }
-
-.benefit-lead {
-    margin-bottom: 32px;
-    color: #ffffff;
+/* set the format of each section of the aside element */
+aside section{
+  margin-bottom: 32px;
+  color: #ffffff;
 }
+/* set the format of h3 in the aside element */
+aside h3{
+  margin-bottom: 10px;
+  text-align: center;
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
 }
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
+/* set the format of the image elements inside the aside element */
+aside img{
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
 }
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.footer {
+/* **************************************Start of footer section*************** */
+/* set basic format and location of the footer element */
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-.footer h2 {
+/* set the font size of h2 in the footer element */
+footer h2 {
     font-size: 20px;
 }
